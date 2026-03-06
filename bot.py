@@ -72,7 +72,7 @@ async def birthday_check():
     now = now_sg()
 
     # Only send birthday messages at 12:00 AM Singapore time
-    if now.hour != 0 or now.minute != 0:
+    if now.hour != 21 or now.minute != 18:
         return
 
     today_str = now.strftime("%Y-%m-%d")
